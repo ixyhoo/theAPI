@@ -14,7 +14,7 @@ req.onload = reqListener;
 
 // Fetch API
 
-fetch('https://api.blablagues.net/?rub=blagues').then((response) => {
+/*fetch('https://api.blablagues.net/?rub=blagues').then((response) => {
     console.log(response);
 })
-.catch((error) => console.log(error));
+.catch((error) => console.log(error));*/
