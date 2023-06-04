@@ -18,3 +18,6 @@ req.onload = reqListener;
     console.log(response);
 })
 .catch((error) => console.log(error));*/
+fetch("data.txt").then((response) => response.text()).then((data) => console.log(data));
+
+fetch("data.json").then((response) => response.json()).then((data) => console.log(data));
