@@ -34,3 +34,4 @@ const init = {
 //fetch("data.json", init).then((response) => console.log(response));
 
 // CRUD => Create (post), Read (GET), Update (PUT), Delete (DELETE)
+
