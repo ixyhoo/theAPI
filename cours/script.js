@@ -44,4 +44,10 @@ const init2 = {
         pseudo: 'John',
         message: 'Hello'
     }),
+    mode: 'cors',
+    Credential: "same-origin",
 }
+document.querySelector('form').addEventListener('submit', (e) => {
+
+    fetch("http://localhost:3000/posts", init2).then((response) => console.log(response));
+});
