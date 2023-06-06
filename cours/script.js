@@ -22,6 +22,15 @@ req.onload = reqListener;
 
 fetch("data.json").then((response) => response.json()).then((data) => console.log(data));*/
 
+const myHeaders = new Headers();
+
 const init = {
     method: 'GET',
+    headers: myHeaders,
+    mode: 'cors',
+    cache: 'default'
 }
+
+//fetch("data.json", init).then((response) => console.log(response));
+
+// CRUD => Create (post), Read (GET), Update (PUT), Delete (DELETE)
