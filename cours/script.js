@@ -35,3 +35,13 @@ const init = {
 
 // CRUD => Create (post), Read (GET), Update (PUT), Delete (DELETE)
 
+const init2 = {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        pseudo: 'John',
+        message: 'Hello'
+    }),
+}
