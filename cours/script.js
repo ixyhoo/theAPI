@@ -59,3 +59,6 @@ setTimeout(() => {
 }, 1000);
 
 //promise
+fetch("monLien").then((res)=> res)
+
+//async await
