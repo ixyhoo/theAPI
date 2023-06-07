@@ -62,3 +62,8 @@ setTimeout(() => {
 fetch("monLien").then((res)=> res)
 
 //async await
+async function fetchData(){
+    fetch("monLien")
+
+    executFonction()
+}
