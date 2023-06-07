@@ -51,3 +51,11 @@ document.querySelector('form').addEventListener('submit', (e) => {
 
     fetch("http://localhost:3000/posts", init2).then((response) => console.log(response));
 });
+
+// Asynchrone
+
+setTimeout(() => {
+    //console.log('1');
+}, 1000);
+
+//promise
