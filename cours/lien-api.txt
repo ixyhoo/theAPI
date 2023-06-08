@@ -1,1 +1,2 @@
 https://api.blablagues.net/?rub=blagues
+https://randomuser.me/api/?results=24
