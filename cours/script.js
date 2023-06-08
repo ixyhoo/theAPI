@@ -82,5 +82,9 @@ fetch("data.json").then((res) => res.json()).
 then((data) => {
 // stingsify => transforme un objet en JSON
 let setting = JSON.stringify(data)
-console.log(setting);
+// parse => transforme un JSON en objet js
+//console.log(JSON.parse(setting));
 })
+
+// web api => interface de programmation qui permet d'interagir avec le navigateur                                                                                                                                                  
+
