@@ -35,7 +35,7 @@ const init = {
 
 // CRUD => Create (post), Read (GET), Update (PUT), Delete (DELETE)
 
-const init2 = {
+/*const init2 = {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -49,17 +49,17 @@ const init2 = {
 }
 document.querySelector('form').addEventListener('submit', (e) => {
 
-    fetch("http://localhost:3000/posts", init2).then((response) => console.log(response));
-});
+   fetch("http://localhost:3000/posts", init2).then((response) => console.log(response));
+});*/
 
 // Asynchrone
 
-setTimeout(() => {
+/*setTimeout(() => {
     //console.log('1');
 }, 1000);
 
 //promise
-fetch("monLien").then((res)=> res)
+fetch("monLien").then((res)=> res)*/
 
 //async await
 //async function fetchData(){
@@ -73,3 +73,7 @@ const fetchData = async () => {
 
     executFonction()
 }*/
+
+//the Json
+
+//métode.json() => méthode qui auto-résout en renvoyant le body de la requête parsé en JSON
