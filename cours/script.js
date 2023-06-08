@@ -77,3 +77,10 @@ const fetchData = async () => {
 //the Json
 
 //métode.json() => méthode qui auto-résout en renvoyant le body de la requête parsé en JSON
+
+fetch("data.json").then((res) => res.json()).
+then((data) => {
+// stingsify => transforme un objet en JSON
+let setting = JSON.stringify(data)
+console.log(setting);
+})
