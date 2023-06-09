@@ -107,3 +107,5 @@ localStorage.user = JSON.stringify(obj);
 
 //console.log(JSON.parse(localStorage.user)
 // sessionStorage => stockage de session        
+sessionStorage.dataSetting = "je stocke des données temporairement";
+console.log(sessionStorage.dataSetting);
