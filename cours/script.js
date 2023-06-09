@@ -88,3 +88,22 @@ let setting = JSON.stringify(data)
 
 // web api => interface de programmation qui permet d'interagir avec le navigateur                                                                                                                                                  
 
+//client storage => stockage côté client
+// localStorage => stockage permanent
+localStorage.data = "je stocke des données"
+
+//document.body.innerHTML = localStorage.data
+
+localStorage.removeItem('data')
+localStorage.user = "John"
+
+const obj = {
+    name: "fly",
+    age: 22,
+};
+
+localStorage.user = JSON.stringify(obj);
+
+
+//console.log(JSON.parse(localStorage.user)
+// sessionStorage => stockage de session        
