@@ -1,7 +1,9 @@
 
 const result = document.getElementById("result")
 const form = document.querySelector("form");
+const input = document.querySelector("input");
 let meals = [];
+
 
 console.log(result);
 async function fetchMeals(){
@@ -15,9 +17,13 @@ async function fetchMeals(){
 function mealsDisplay(){
    meals.length = 12;
    result.innerHTML = meals.map((meal) =>
-   `li class="card">
+   `<li class="card">
    <h2>${meal.strMeal}</h2>
-   `);
+   <p>${meal.strArea}</p>
+   <img src="${meal.strMealThumb}" alt="${meal.strMeal}"/>
+   <ul></ul>
+   </li>
+   `).join("");
 }
 
 form.addEventListener("submit", (e) => {
