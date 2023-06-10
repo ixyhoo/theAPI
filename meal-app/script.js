@@ -20,14 +20,29 @@ function mealsDisplay(){
    }  else {
 
       meals.length = 12;
-      result.innerHTML = meals.map((meal) =>
-      `<li class="card">
-      <h2>${meal.strMeal}</h2>
-      <p>${meal.strArea}</p>
-      <img src="${meal.strMealThumb}" alt="${meal.strMeal}"/>
-      <ul></ul>
-      </li>
-      `).join("");
+      result.innerHTML = meals
+      .map((meal) => {
+        let ingredients = [];
+
+         for (i = 1; i < 21; i++){
+            if (meal[`strIngredient${i}`]){
+               let ingredient = meal[`strIngredient${i}`];
+               let measure = meal[`strMeasure${i}`];
+
+               ingredients.push(`<li>${ingredient} - ${measure}</li>`);
+            }
+         }
+
+         console.log(ingredients);
+         return `<li class="card">
+         <h2>${meal.strMeal}</h2>
+         <p>${meal.strArea}</p>
+         <img src="${meal.strMealThumb}" alt="${meal.strMeal}"/>
+         <ul>${ingredients.join("")}</ul>
+         </li>
+         `
+      }
+      ).join("");
    }                                                                                                                                                                                                                                                                                                                                                                                                                     
 }
 
