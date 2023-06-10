@@ -1,6 +1,14 @@
 
+const result = getElementById("result")
+let meals = [];
 
-fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=tomato").
-then((res) =>
+console.log(result);
+async function fetchMeals(){
 
- res.json()).then((data) => console.log(data.meals[0]))
+ await   fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=tomato").
+    then((res) =>
+    
+     res.json()).then((data) => (meals = data.meals))
+     console.log(meals);
+}
+fetchMeals();
