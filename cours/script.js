@@ -110,3 +110,8 @@ localStorage.user = JSON.stringify(obj);
 sessionStorage.dataSettings = "je stocke des données temporairement";
 //console.log(sessionStorage.dataSettings);
 sessionStorage.clear();
+
+//cookies
+document.cookie = "username=jha";
+
+document.cookie = "pseudo=fly;path=/; max-age=350000; secure; samesite";
